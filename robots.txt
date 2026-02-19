@@ -1,0 +1,39 @@
+# Omzato Accounting — robots.txt
+# https://omzato.com
+
+User-agent: *
+Allow: /
+Disallow: /success.html
+
+# Sitemap
+Sitemap: https://omzato.com/sitemap.xml
+
+# AI Crawlers — Explicitly Allowed
+# Most competitors block these by default, giving Omzato an edge
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /

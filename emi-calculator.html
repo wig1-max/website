@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator India | Home, Car, Personal Loan EMI | Omzato</title>
+    <meta name="description" content="Free EMI Calculator. Calculate monthly EMI for home, car, personal loan. Amortization schedule included. Instant results.">
+    <meta name="keywords" content="EMI calculator, home loan EMI, car loan EMI, personal loan EMI, loan calculator India, amortization schedule">
+    <meta name="author" content="Aryan Madaan, Omzato Accounting">
+    <link rel="canonical" href="https://omzato.com/emi-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="EMI Calculator India | Home, Car, Personal Loan EMI | Omzato">
+    <meta property="og:description" content="Free EMI Calculator. Calculate monthly EMI for home, car, personal loan. Amortization schedule included. Instant results.">
+    <meta property="og:url" content="https://omzato.com/emi-calculator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omzato Accounting">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EMI Calculator India | Home, Car, Personal Loan EMI | Omzato">
+    <meta name="twitter:description" content="Free EMI Calculator. Calculate monthly EMI for home, car, personal loan. Amortization schedule included. Instant results.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "EMI Calculator",
+        "description": "Free EMI Calculator. Calculate monthly EMI for home, car, personal loan. Amortization schedule included.",
+        "url": "https://omzato.com/emi-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Omzato Accounting"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is EMI and how is it calculated?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EMI (Equated Monthly Instalment) is a fixed monthly payment made to a lender to repay a loan. It is calculated using the formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is the principal amount, r is the monthly interest rate, and n is the number of monthly instalments."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I prepay my loan to reduce EMI?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, most banks allow prepayment of loans. For floating rate home loans, banks cannot charge prepayment penalties as per RBI guidelines. Prepayment reduces the outstanding principal, which in turn reduces either your EMI amount or your loan tenure."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between floating and fixed interest rates?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Fixed interest rates remain constant throughout the loan tenure, giving predictable EMIs. Floating rates change based on the repo rate and market conditions, meaning your EMI can increase or decrease over time. Floating rates are generally lower initially but carry the risk of future increases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does loan tenure affect my EMI?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A longer loan tenure reduces your monthly EMI but increases the total interest paid over the loan period. A shorter tenure means higher EMIs but significantly lower total interest cost. For example, a ₹50 lakh home loan at 8.5% for 20 years costs about ₹22 lakh more in interest than the same loan for 10 years."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is an amortization schedule?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "An amortization schedule is a detailed table showing each EMI payment broken down into principal and interest components. In the early years, a larger portion of the EMI goes toward interest. Over time, the principal component increases while the interest component decreases."
+                }
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://omzato.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Calculators",
+                "item": "https://omzato.com/calculators"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "EMI Calculator",
+                "item": "https://omzato.com/emi-calculator.html"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Omzato Accounting",
+        "description": "Professional accounting and financial advisory services in Panchkula, India.",
+        "url": "https://omzato.com",
+        "telephone": "+917986772124",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Panchkula",
+            "addressCountry": "IN"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Aryan Madaan",
+            "qualification": "ACCA"
+        },
+        "priceRange": "₹₹"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="site-header"></header>
+
+    <!-- Page Header -->
+    <section class="page-header animate-on-scroll">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/calculators">Calculators</a></li>
+                    <li aria-current="page">EMI Calculator</li>
+                </ol>
+            </nav>
+            <h1>EMI Calculator &mdash; Calculate Your Loan EMI</h1>
+            <p>Instantly compute your Equated Monthly Instalment for home, car, personal, or education loans. View amortization schedule and plan your finances better.</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section animate-on-scroll">
+        <div class="container">
+            <div class="calc-card">
+                <form id="emiForm" onsubmit="event.preventDefault(); calculateEMI();">
+                    <div class="calc-form-group">
+                        <label for="loanType">Loan Type</label>
+                        <select id="loanType" required>
+                            <option value="home">Home Loan</option>
+                            <option value="car">Car Loan</option>
+                            <option value="personal">Personal Loan</option>
+                            <option value="education">Education Loan</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-form-row">
+                        <div class="calc-form-group">
+                            <label for="emiPrincipal">Loan Amount (&#8377;)</label>
+                            <input type="number" id="emiPrincipal" placeholder="e.g., 5000000" required min="1">
+                        </div>
+                        <div class="calc-form-group">
+                            <label for="emiRate">Annual Interest Rate (%)</label>
+                            <input type="number" id="emiRate" placeholder="e.g., 8.5" required step="0.1" min="0.1">
+                        </div>
+                    </div>
+
+                    <div class="calc-form-row">
+                        <div class="calc-form-group">
+                            <label for="emiTenure">Loan Tenure</label>
+                            <input type="number" id="emiTenure" placeholder="e.g., 20" required min="1">
+                        </div>
+                        <div class="calc-form-group">
+                            <label for="tenureType">Tenure Type</label>
+                            <select id="tenureType">
+                                <option value="years">Years</option>
+                                <option value="months">Months</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="calc-btn">Calculate EMI</button>
+                </form>
+
+                <!-- Results -->
+                <div id="emiResult" class="calc-result hidden">
+                    <h2>Your EMI Calculation Results</h2>
+                    <div class="calc-result-grid">
+                        <div class="calc-result-item highlight">
+                            <span class="calc-result-label">Monthly EMI</span>
+                            <span class="calc-result-value" id="emiAmount">&#8377;0</span>
+                        </div>
+                        <div class="calc-result-item">
+                            <span class="calc-result-label">Total Interest</span>
+                            <span class="calc-result-value" id="emiTotalInterest">&#8377;0</span>
+                        </div>
+                        <div class="calc-result-item">
+                            <span class="calc-result-label">Total Payment</span>
+                            <span class="calc-result-value" id="emiTotalPayment">&#8377;0</span>
+                        </div>
+                        <div class="calc-result-item">
+                            <span class="calc-result-label">Interest %</span>
+                            <span class="calc-result-value" id="emiInterestPercent">0%</span>
+                        </div>
+                    </div>
+
+                    <div id="amortizationTable"></div>
+
+                    <div class="calc-actions">
+                        <button class="calc-action-btn" onclick="shareResults('emi')">Share</button>
+                        <button class="calc-action-btn" onclick="window.print()">Print</button>
+                        <a href="https://wa.me/917986772124?text=Hi%20Omzato%2C%20I%20need%20advice%20on%20my%20loan%20EMI." class="calc-action-btn cta" target="_blank" rel="noopener noreferrer">Get Advice</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Content -->
+    <section class="educational-content animate-on-scroll">
+        <div class="container">
+            <h2>Understanding EMI &mdash; Equated Monthly Instalment</h2>
+
+            <div class="content-block">
+                <h3>EMI Formula</h3>
+                <p>EMI is calculated using the standard reducing balance formula:</p>
+                <div class="formula-box">
+                    <p><strong>EMI = P &times; r &times; (1 + r)<sup>n</sup> / ((1 + r)<sup>n</sup> &minus; 1)</strong></p>
+                    <ul>
+                        <li><strong>P</strong> = Principal Loan Amount</li>
+                        <li><strong>r</strong> = Monthly Interest Rate (Annual Rate / 12 / 100)</li>
+                        <li><strong>n</strong> = Total Number of Monthly Instalments</li>
+                    </ul>
+                </div>
+                <p>For example, a &#8377;50,00,000 home loan at 8.5% p.a. for 20 years results in a monthly EMI of approximately &#8377;43,391. The total interest paid over 20 years would be about &#8377;54,13,800.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Typical Indian Loan Interest Rates (2025)</h3>
+                <div class="table-responsive">
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>Loan Type</th>
+                                <th>Interest Rate Range</th>
+                                <th>Typical Tenure</th>
+                                <th>Max Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Home Loan</td>
+                                <td>8.25% &ndash; 9.50%</td>
+                                <td>15 &ndash; 30 years</td>
+                                <td>Up to &#8377;10 Cr</td>
+                            </tr>
+                            <tr>
+                                <td>Car Loan</td>
+                                <td>8.50% &ndash; 12.00%</td>
+                                <td>1 &ndash; 7 years</td>
+                                <td>Up to &#8377;1 Cr</td>
+                            </tr>
+                            <tr>
+                                <td>Personal Loan</td>
+                                <td>10.50% &ndash; 18.00%</td>
+                                <td>1 &ndash; 5 years</td>
+                                <td>Up to &#8377;40 Lakh</td>
+                            </tr>
+                            <tr>
+                                <td>Education Loan</td>
+                                <td>8.00% &ndash; 12.50%</td>
+                                <td>5 &ndash; 15 years</td>
+                                <td>Up to &#8377;1 Cr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">*Rates are indicative and vary by bank, credit score, and loan amount. Always verify current rates with your lender.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Tips to Reduce Your EMI</h3>
+                <ul class="tips-list">
+                    <li><strong>Improve your credit score:</strong> A CIBIL score above 750 qualifies you for lower interest rates, directly reducing your EMI.</li>
+                    <li><strong>Make a higher down payment:</strong> A larger down payment reduces the principal, lowering both EMI and total interest.</li>
+                    <li><strong>Opt for a longer tenure:</strong> While this increases total interest, it brings down the monthly EMI if affordability is a concern.</li>
+                    <li><strong>Compare lenders:</strong> Even a 0.25% difference in rate can save lakhs over a long tenure. Compare offers from multiple banks and NBFCs.</li>
+                    <li><strong>Prepay when possible:</strong> Use bonuses or surplus funds to make part-prepayments. This reduces outstanding principal and total interest.</li>
+                    <li><strong>Consider balance transfer:</strong> If rates drop, transfer your loan to a lender offering a lower rate to reduce EMI.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq-section animate-on-scroll">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is EMI and how is it calculated?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>EMI (Equated Monthly Instalment) is a fixed monthly payment made to a lender to repay a loan. It is calculated using the formula: EMI = P &times; r &times; (1+r)<sup>n</sup> / ((1+r)<sup>n</sup> &minus; 1), where P is the principal amount, r is the monthly interest rate, and n is the number of monthly instalments. Each EMI consists of both principal repayment and interest payment components.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I prepay my loan to reduce EMI?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, most banks allow prepayment of loans. For floating rate home loans, banks cannot charge prepayment penalties as per RBI guidelines. Prepayment reduces the outstanding principal, which in turn reduces either your EMI amount or your loan tenure. Even small prepayments can save you significant interest over the life of the loan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is the difference between floating and fixed interest rates?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fixed interest rates remain constant throughout the loan tenure, giving you predictable EMIs. Floating rates change based on the repo rate and market conditions, meaning your EMI can increase or decrease over time. Floating rates are generally 1&ndash;2% lower initially but carry the risk of future increases. Most home loans in India are now on floating rates linked to external benchmarks like the RBI repo rate.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How does loan tenure affect my EMI?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A longer loan tenure reduces your monthly EMI but increases the total interest paid over the loan period. A shorter tenure means higher EMIs but significantly lower total interest cost. For example, a &#8377;50 lakh home loan at 8.5% for 20 years costs about &#8377;22 lakh more in total interest than the same loan for 10 years. Choose a tenure that balances affordability with total cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is an amortization schedule?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>An amortization schedule is a detailed table showing each EMI payment broken down into principal and interest components. In the early years of a loan, a larger portion of the EMI goes toward paying interest. As time progresses, the principal component increases while the interest component decreases. This schedule helps you understand exactly how your loan is being repaid month by month.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Calculators -->
+    <section class="related-calculators animate-on-scroll">
+        <div class="container">
+            <h2>Related Calculators</h2>
+            <div class="related-grid">
+                <a href="home-loan-calculator.html" class="related-card">
+                    <h3>Home Loan Calculator</h3>
+                    <p>Detailed home loan analysis with eligibility check and stamp duty estimation.</p>
+                </a>
+                <a href="fd-calculator.html" class="related-card">
+                    <h3>FD Calculator</h3>
+                    <p>Calculate fixed deposit maturity amount with quarterly, monthly, or yearly compounding.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA -->
+    <section class="whatsapp-cta animate-on-scroll">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Need Help With Your Loan?</h2>
+                <p>Get expert advice from <strong>Aryan Madaan (ACCA)</strong> at Omzato Accounting, Panchkula. Your first consultation is <strong>FREE</strong>.</p>
+                <a href="https://wa.me/917986772124?text=Hi%20Omzato%2C%20I%20need%20help%20with%20my%20loan%20EMI%20planning." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="js/calculators.js"></script>
+    <script src="js/whatsapp-nudge.js"></script>
+</body>
+</html>

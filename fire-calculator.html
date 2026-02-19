@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE Calculator India | Financial Independence Retire Early | Omzato</title>
+    <meta name="description" content="Free FIRE Calculator for India. Calculate your FIRE number, years to financial independence. Indian context with 3.5% SWR.">
+    <meta name="keywords" content="FIRE calculator, financial independence, retire early, FIRE number India, safe withdrawal rate, FIRE movement India, Omzato Panchkula">
+    <meta name="author" content="Aryan Madaan, Omzato Accounting">
+    <link rel="canonical" href="https://omzato.com/fire-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FIRE Calculator India | Financial Independence Retire Early | Omzato">
+    <meta property="og:description" content="Free FIRE Calculator for India. Calculate your FIRE number, years to financial independence. Indian context with 3.5% SWR.">
+    <meta property="og:url" content="https://omzato.com/fire-calculator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omzato Accounting">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FIRE Calculator India | Financial Independence Retire Early | Omzato">
+    <meta name="twitter:description" content="Free FIRE Calculator for India. Calculate your FIRE number, years to financial independence. Indian context with 3.5% SWR.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FIRE Calculator",
+        "description": "Free FIRE Calculator for India. Calculate your FIRE number, years to financial independence, and track your progress. Uses 3.5% safe withdrawal rate for Indian context.",
+        "url": "https://omzato.com/fire-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "Omzato Accounting",
+            "url": "https://omzato.com"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the FIRE movement?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FIRE stands for Financial Independence, Retire Early. It's a movement focused on aggressive saving and investing (typically 50-70% of income) to build a corpus large enough that investment returns can cover all living expenses, allowing you to retire decades earlier than the traditional age of 60. The goal is freedom — freedom to work on what you love, not what you must."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is 3.5% safe withdrawal rate recommended for India instead of 4%?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The famous 4% rule is based on US data with historically lower inflation (2-3%). India's inflation is higher (6-7%), and Indian equity markets, while growing, have different risk-return characteristics. A 3.5% SWR provides a larger safety margin, accounting for: higher inflation, rupee depreciation, healthcare cost inflation (10-14%), and the possibility of a 40-50 year retirement if you FIRE in your 30s."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I calculate my FIRE number?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your FIRE number = Annual Expenses / Safe Withdrawal Rate. For India with 3.5% SWR: FIRE Number = Annual Expenses × 28.57. For example, if you spend ₹6 lakh per year (₹50,000/month), your FIRE number is ₹6,00,000 / 0.035 = ₹1.71 crore. But remember to inflate your expenses to account for the years until you plan to FIRE."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the different types of FIRE?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "There are several FIRE variants: (1) Lean FIRE — bare minimum expenses, very frugal lifestyle, typically ₹25,000-40,000/month in India. (2) Regular FIRE — comfortable middle-class lifestyle. (3) Fat FIRE — premium lifestyle with luxury spending, typically ₹2-3 lakh/month. (4) Barista FIRE — partial FIRE where you work part-time for supplemental income and healthcare. (5) Coast FIRE — you've saved enough that compounding alone will reach your FIRE number by traditional retirement age."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is FIRE realistic in India?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, FIRE is achievable in India with some advantages: lower cost of living compared to the West, family support systems, growing equity markets with higher return potential, and favourable tax treatment of long-term capital gains. However, Indian FIRE has unique challenges: higher inflation, expensive private healthcare, no social security net, and education costs for children. A realistic Indian FIRE plan must account for all these factors."
+                }
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://omzato.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Calculators",
+                "item": "https://omzato.com/calculators.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "FIRE Calculator",
+                "item": "https://omzato.com/fire-calculator.html"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Omzato Accounting",
+        "description": "Professional accounting and financial advisory services in Panchkula by Aryan Madaan (ACCA).",
+        "url": "https://omzato.com",
+        "telephone": "+917986772124",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Panchkula",
+            "addressRegion": "Haryana",
+            "addressCountry": "IN"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Aryan Madaan",
+            "qualifications": "ACCA"
+        },
+        "priceRange": "₹₹"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="site-header"></header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators.html">Calculators</a> &rsaquo;
+                <span>FIRE Calculator</span>
+            </nav>
+            <h1 class="animate-on-scroll">FIRE Calculator &mdash; Financial Independence, Retire Early</h1>
+            <p class="page-header-subtitle animate-on-scroll">Calculate your FIRE number, find out how many years until financial independence, and track your progress. Built for the Indian context with a conservative 3.5% safe withdrawal rate.</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calc-card animate-on-scroll">
+                <form id="fireForm" onsubmit="event.preventDefault(); calculateFIRE();">
+                    <div class="calc-form-row">
+                        <div class="calc-form-group">
+                            <label for="fireCurrentAge">Current Age</label>
+                            <input type="number" id="fireCurrentAge" value="30" required min="18" max="70">
+                        </div>
+                        <div class="calc-form-group">
+                            <label for="fireMonthlyExpenses">Monthly Expenses (₹)</label>
+                            <input type="number" id="fireMonthlyExpenses" placeholder="e.g., 50000" required min="1">
+                        </div>
+                    </div>
+                    <div class="calc-form-row">
+                        <div class="calc-form-group">
+                            <label for="fireExpenseGrowth">Annual Expense Growth (%)</label>
+                            <input type="number" id="fireExpenseGrowth" value="6" step="0.5" required min="0">
+                        </div>
+                        <div class="calc-form-group">
+                            <label for="fireNetWorth">Current Net Worth (₹)</label>
+                            <input type="number" id="fireNetWorth" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="calc-form-row">
+                        <div class="calc-form-group">
+                            <label for="firePreReturn">Pre-Retirement Return (%)</label>
+                            <input type="number" id="firePreReturn" value="12" step="0.5" required min="1">
+                        </div>
+                        <div class="calc-form-group">
+                            <label for="firePostReturn">Post-Retirement Return (%)</label>
+                            <input type="number" id="firePostReturn" value="8" step="0.5" required min="1">
+                        </div>
+                    </div>
+                    <div class="calc-form-group">
+                        <label for="fireSWR">Safe Withdrawal Rate (%)</label>
+                        <input type="number" id="fireSWR" value="3.5" step="0.5" required min="1" max="10">
+                        <span class="calc-form-note">3.5% recommended for India (more conservative than US 4%)</span>
+                    </div>
+                    <button type="submit" class="calc-btn">Calculate FIRE Number</button>
+                </form>
+
+                <!-- Results -->
+                <div id="fireResult" class="calc-result hidden">
+                    <h3>Your FIRE Summary</h3>
+                    <div class="calc-result-grid">
+                        <div class="calc-result-item highlight">
+                            <span class="calc-result-label">FIRE Number</span>
+                            <span class="calc-result-value" id="fireNumber">--</span>
+                        </div>
+                        <div class="calc-result-item">
+                            <span class="calc-result-label">Years to FIRE</span>
+                            <span class="calc-result-value" id="fireYears">--</span>
+                        </div>
+                        <div class="calc-result-item">
+                            <span class="calc-result-label">FIRE Age</span>
+                            <span class="calc-result-value" id="fireAge">--</span>
+                        </div>
+                        <div class="calc-result-item">
+                            <span class="calc-result-label">Progress</span>
+                            <span class="calc-result-value" id="fireProgress">--</span>
+                        </div>
+                    </div>
+
+                    <!-- FIRE Progress Bar -->
+                    <div class="fire-progress-container">
+                        <div class="fire-progress-label">Your FIRE Progress</div>
+                        <div class="fire-progress-bar-wrapper">
+                            <div class="fire-progress-bar" id="fireProgressBar" style="width: 0%;"></div>
+                        </div>
+                        <div class="fire-progress-text" id="fireProgressText">0% towards FIRE</div>
+                    </div>
+
+                    <div class="calc-result-actions">
+                        <button class="calc-action-btn" onclick="shareResult('fire')">Share</button>
+                        <button class="calc-action-btn" onclick="printResult('fireResult')">Print</button>
+                        <a href="https://wa.me/917986772124?text=Hi%20Omzato!%20I%20want%20to%20plan%20for%20FIRE%20(Financial%20Independence).%20Can%20we%20discuss?" class="calc-action-btn cta">Get Advice</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section class="educational-section">
+        <div class="container">
+            <h2 class="animate-on-scroll">Understanding FIRE in the Indian Context</h2>
+
+            <div class="edu-card animate-on-scroll">
+                <h3>What Is FIRE?</h3>
+                <p><strong>FIRE</strong> stands for <strong>Financial Independence, Retire Early</strong>. It is a movement focused on aggressive saving and investing &mdash; typically 50&ndash;70% of income &mdash; to build a corpus large enough that investment returns can cover all living expenses indefinitely.</p>
+                <p>The core idea is simple: accumulate enough wealth so that you never <em>have</em> to work for money again. This does not mean you stop working &mdash; it means you gain the freedom to work on what you love, volunteer, travel, or pursue passions without financial pressure.</p>
+                <p>Your <strong>FIRE Number</strong> is the corpus you need. It is calculated as: <strong>Annual Expenses / Safe Withdrawal Rate</strong>. Once your invested assets reach this number, you are financially independent.</p>
+            </div>
+
+            <div class="edu-card animate-on-scroll">
+                <h3>Why 3.5% Safe Withdrawal Rate for India?</h3>
+                <p>The famous <strong>4% rule</strong> originates from the 1998 Trinity Study based on US market data. However, blindly applying it to India is risky for several reasons:</p>
+                <ul>
+                    <li><strong>Higher inflation:</strong> India's average inflation is 6&ndash;7% compared to the US 2&ndash;3%. This erodes your corpus faster.</li>
+                    <li><strong>Healthcare costs:</strong> Medical inflation in India runs at 10&ndash;14% annually, and there is no Medicare equivalent for retirees.</li>
+                    <li><strong>Longer retirement:</strong> If you FIRE at 35, you need your corpus to last 50+ years &mdash; far longer than the 30 years the Trinity Study assumed.</li>
+                    <li><strong>Currency depreciation:</strong> The rupee historically depreciates against major currencies, affecting purchasing power for international travel or education.</li>
+                    <li><strong>No social security:</strong> Unlike the US (Social Security) or UK (State Pension), India has no meaningful government pension for private-sector workers.</li>
+                </ul>
+                <p>A <strong>3.5% SWR</strong> (meaning you need approximately 28.6 times your annual expenses) provides a much larger safety margin for these India-specific risks.</p>
+            </div>
+
+            <div class="edu-card animate-on-scroll">
+                <h3>FIRE Variants Explained</h3>
+                <div class="fire-variants">
+                    <div class="fire-variant-item">
+                        <h4>Lean FIRE</h4>
+                        <p>Living on bare minimum expenses. In India, this typically means ₹25,000&ndash;₹40,000/month in a Tier 2/3 city. Requires a corpus of approximately ₹85 lakh&ndash;₹1.4 crore at 3.5% SWR. Achievable but leaves little room for emergencies or lifestyle inflation.</p>
+                    </div>
+                    <div class="fire-variant-item">
+                        <h4>Regular FIRE</h4>
+                        <p>Comfortable middle-class lifestyle with ₹50,000&ndash;₹1,00,000/month expenses. Requires ₹1.7&ndash;₹3.4 crore corpus. Covers good housing, occasional travel, children's basic education, and reasonable healthcare.</p>
+                    </div>
+                    <div class="fire-variant-item">
+                        <h4>Fat FIRE</h4>
+                        <p>Premium lifestyle with ₹2&ndash;₹3 lakh+/month expenses. Requires ₹7&ndash;₹10 crore+ corpus. Includes luxury living, international travel, premium healthcare, and private schooling for children. Harder to achieve but most comfortable.</p>
+                    </div>
+                    <div class="fire-variant-item">
+                        <h4>Barista FIRE</h4>
+                        <p>You have enough savings to partly cover expenses but choose to work part-time for supplemental income and, importantly, employer-sponsored health insurance. Popular among those who want to leave high-stress corporate jobs for more meaningful, lower-paying work.</p>
+                    </div>
+                    <div class="fire-variant-item">
+                        <h4>Coast FIRE</h4>
+                        <p>You have saved enough that compounding alone will grow your corpus to your FIRE number by traditional retirement age (60). You still work, but only to cover current expenses &mdash; you do not need to save any more. A great milestone on the journey to full FIRE.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card animate-on-scroll">
+                <h3>Indian FIRE Considerations</h3>
+                <ul>
+                    <li><strong>Healthcare:</strong> Budget ₹25,000&ndash;₹50,000/year for comprehensive health insurance that increases yearly. After age 60, premiums can be ₹1 lakh+/year. Consider a super top-up plan.</li>
+                    <li><strong>Children's expenses:</strong> If you have or plan to have children, factor in education (₹20 lakh&ndash;₹1 crore), marriage, and initial support. These are non-negotiable expenses in India.</li>
+                    <li><strong>Family obligations:</strong> Supporting parents, joint family expectations, and social obligations are real costs that Western FIRE calculations often miss.</li>
+                    <li><strong>Tax efficiency:</strong> Structure your withdrawals to minimize tax. Use a mix of equity (LTCG tax-free up to ₹1.25 lakh), debt funds, PPF (tax-free), and NPS for efficient income in retirement.</li>
+                    <li><strong>Emergency buffer:</strong> Keep 2 years of expenses in liquid instruments as a buffer against market downturns (sequence of returns risk).</li>
+                    <li><strong>Rental income:</strong> Many Indian FIRE aspirants use rental property as a semi-passive income stream to supplement their corpus-based withdrawals.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="animate-on-scroll">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        What is the FIRE movement?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>FIRE stands for Financial Independence, Retire Early. It is a movement focused on aggressive saving and investing (typically 50&ndash;70% of income) to build a corpus large enough that investment returns can cover all living expenses. The goal is freedom &mdash; freedom to work on what you love, not what you must. You do not necessarily stop working; you gain the choice.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        Why is 3.5% safe withdrawal rate recommended for India instead of 4%?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The 4% rule is based on US data with historically lower inflation (2&ndash;3%). India has higher inflation (6&ndash;7%), no social security, expensive private healthcare (inflating at 10&ndash;14%), and if you FIRE in your 30s, your corpus needs to last 50+ years rather than 30. A 3.5% SWR provides a larger safety margin, meaning you need about 28.6 times annual expenses rather than 25 times.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I calculate my FIRE number?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your FIRE number = Annual Expenses / Safe Withdrawal Rate. For India with 3.5% SWR: FIRE Number = Annual Expenses &times; 28.57. For example, if you spend ₹6 lakh per year (₹50,000/month), your FIRE number is ₹6,00,000 / 0.035 = approximately ₹1.71 crore. However, you must inflate your current expenses to the year you expect to achieve FIRE.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        What are the different types of FIRE?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are several FIRE variants: (1) <strong>Lean FIRE</strong> &mdash; bare minimum expenses, very frugal lifestyle. (2) <strong>Regular FIRE</strong> &mdash; comfortable middle-class lifestyle. (3) <strong>Fat FIRE</strong> &mdash; premium lifestyle with luxury spending. (4) <strong>Barista FIRE</strong> &mdash; partial FIRE where you work part-time for supplemental income. (5) <strong>Coast FIRE</strong> &mdash; you have saved enough that compounding alone will reach your FIRE number by traditional retirement age.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        Is FIRE realistic in India?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, FIRE is achievable in India with some advantages: lower cost of living compared to the West, strong family support systems, growing equity markets with higher return potential, and favourable tax treatment of long-term capital gains. However, Indian FIRE has unique challenges: higher inflation, expensive private healthcare, no social security net, and education costs for children. A realistic Indian FIRE plan must account for all these factors, which is why we recommend working with a financial advisor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Calculators -->
+    <section class="related-calculators">
+        <div class="container">
+            <h2 class="animate-on-scroll">Related Calculators</h2>
+            <div class="related-calc-grid">
+                <a href="retirement-calculator.html" class="related-calc-card animate-on-scroll">
+                    <h3>Retirement Calculator</h3>
+                    <p>Plan your traditional retirement corpus and monthly SIP needed. Great complement to your FIRE planning.</p>
+                </a>
+                <a href="goal-calculator.html" class="related-calc-card animate-on-scroll">
+                    <h3>Goal Planning Calculator</h3>
+                    <p>Plan for specific financial goals alongside your FIRE journey &mdash; education, home, or travel fund.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA Section -->
+    <section class="whatsapp-cta-section">
+        <div class="container">
+            <div class="cta-card animate-on-scroll">
+                <h2>Ready to Start Your FIRE Journey?</h2>
+                <p>Get a personalized FIRE roadmap from Aryan Madaan (ACCA) at Omzato Accounting, Panchkula. Your first consultation is <strong>absolutely FREE</strong>.</p>
+                <a href="https://wa.me/917986772124?text=Hi%20Omzato!%20I%20want%20to%20plan%20for%20FIRE%20(Financial%20Independence).%20Can%20we%20discuss%20my%20roadmap?" class="whatsapp-cta-btn" target="_blank" rel="noopener noreferrer">
+                    Chat on WhatsApp &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="js/calculators.js"></script>
+    <script src="js/whatsapp-nudge.js"></script>
+</body>
+</html>
