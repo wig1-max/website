@@ -6,32 +6,46 @@ Static HTML/CSS/JS website for **Omzato Accounting**, a CA/accounting firm in **
 - **Owner:** Aryan Madaan (ACCA-qualified)
 - **Domain:** https://omzato.com
 - **WhatsApp:** +917986772124 (primary CTA across entire site)
-- **Branch:** `claude/rebuild-accounting-website-india-rv1Br`
 - **Repo:** `wig1-max/website`
 
 ## Tech Stack
 - Pure HTML/CSS/JS — no frameworks, no build tools
-- Google Fonts: Inter (400,500,600,700,800)
+- Google Fonts: Inter (400,500,600,700,800) + Playfair Display (600,700,italic) — injected via `scripts.js`
 - No external JS dependencies
 - All pages are static `.html` files
 
 ## Brand & Design
-- **Primary color:** Navy `#1e3a5f`
-- **Accent color:** Green `#2ecc71`
-- **Font:** Inter
-- **Style:** Clean, professional, mobile-first responsive
+- **Primary palette:** Navy `#1B2A4A` / Charcoal `#1C1C1C` / Charcoal-deep `#0D0D0D`
+- **Accent color:** Green `#27AE60` / `#2ECC71`
+- **Neutral tones:** Ivory `#F5F0E8` / Platinum `#E8E4DC`
+- **Display font:** Playfair Display (serif) — used on hero titles, section headings, logo name, blockquotes
+- **Body font:** Inter — used for all body copy, nav, labels
+- **Price/number font:** DM Mono (monospace) — used on price amounts, stat numbers, calc results
+- **Style:** Premium minimalist, charcoal/ivory palette, mobile-first responsive
 - Cookie consent banner, back-to-top button, sticky header on all pages
 
-## File Structure (37 files)
+## Brand Direction (Approved Feb 2026)
+The "Elite Operator" persona: international standard (ACCA) brought to Panchkula. Key principles:
+- **Serif for trust** (Playfair Display on headings/logo) — signals legacy and authority
+- **Mono for outcomes** (DM Mono on prices/numbers) — signals precision and transparency
+- **Charcoal/ivory palette** over the original navy — starker, more premium contrast
+- **More negative space** on pricing cards — honesty through visual clarity
+- **Voice:** Outcome-first, minimalist absolutes ("Flawless GST compliance. ₹40,000 avg ITC recovered.")
+
+## File Structure (40 files)
 
 ```
-css/styles.css                — Full design system (~2800 lines)
-js/scripts.js                 — Header/footer injection, nav, scroll animations
+css/styles.css                — Full design system (~2900 lines)
+js/scripts.js                 — Header/footer injection, nav, scroll animations, font+favicon injection
 js/calculators.js             — All 9 calculator formulas
 js/whatsapp-nudge.js          — 8-trigger WhatsApp popup (scroll, time, exit-intent, etc.)
 js/blog.js                    — Blog filtering, TOC generation, share buttons
 
-index.html                    — Homepage (hero, services overview, why us, testimonials, calculators)
+favicon.svg                   — Brand favicon: charcoal background, ivory serif "O"
+images/aryan-madaan.jpg       — Founder photo (PENDING — needs real photo file added here)
+images/aryan-madaan.svg       — SVG illustration placeholder (used as fallback until real photo added)
+
+index.html                    — Homepage (hero with founder photo, services overview, why us, testimonials, calculators)
 services.html                 — Services hub — 6 cards linking to individual service pages + comparison table
 tax-filing.html               — Tax Filing service page (ITR pricing, process, FAQ)
 gst-services.html             — GST Services page (registration, filing, e-invoice pricing)
@@ -39,7 +53,7 @@ company-registration.html     — Company Registration page (6 entity types, pri
 audit.html                    — Audit Services page (statutory, tax, GST, internal audit)
 bookkeeping.html              — Bookkeeping page (4 tiers from Basic to Enterprise)
 advisory.html                 — Business Advisory page (Startup, Growth, Virtual CFO)
-why-us.html                   — ACCA positioning, comparison table, differentiators
+why-us.html                   — ACCA positioning, comparison table, differentiators, founder About section
 contact.html                  — WhatsApp-focused contact, embedded map
 testimonials.html             — 10 client reviews
 success.html                  — Form submission confirmation
@@ -96,6 +110,8 @@ Homepage (index.html)
 - `scripts.js` injects the full header and footer HTML on DOMContentLoaded
 - Navigation links, WhatsApp button, and footer content are all managed centrally in `scripts.js`
 - Nav dropdowns: Services → 6 individual service pages; Calculators → 9 calculator pages
+- **Font injection:** `scripts.js` also injects the Playfair Display Google Fonts link into `<head>` on every page
+- **Favicon injection:** `scripts.js` patches the `<link rel="icon">` to point to `/favicon.svg` on every page — no need to edit individual HTML files for favicon changes
 
 ### Blog Posts in /blog/ Subfolder
 - Blog post HTML files live in `/blog/` — all asset paths use `../` prefix
@@ -134,6 +150,11 @@ Homepage (index.html)
 | Pvt Ltd Registration | ₹14,999 | company-registration.html |
 | Bookkeeping | ₹5,000/month | bookkeeping.html |
 
+## Pending Items
+- **Founder photo:** `images/aryan-madaan.jpg` needs to be replaced with Aryan's actual body-shot photo.
+  The site currently falls back to `images/aryan-madaan.svg` (SVG illustration placeholder).
+  To add the real photo: copy/upload the JPG to `/images/aryan-madaan.jpg` — no code changes needed.
+
 ## Common Refinement Tasks
 - To change pricing: edit the specific service page (e.g., `tax-filing.html` for ITR prices)
 - To change WhatsApp number: search for `917986772124` across all files
@@ -142,3 +163,12 @@ Homepage (index.html)
 - To edit header/footer/nav: edit the injection code in `js/scripts.js`
 - To change colors/fonts: edit CSS custom properties at top of `css/styles.css`
 - To add a new service: create a new service page, add to nav in `scripts.js`, add card to `services.html`, update sitemap
+- To update favicon: edit `/favicon.svg` — it auto-applies to all pages via `scripts.js`
+- To change the display font: update `--font-display` in `css/styles.css` and the Google Fonts URL in `scripts.js`
+
+## Future Refinements (Backlog)
+- "Snap to clarity" micro-animation on calculator result reveal (blurred → sharp number)
+- Outcome-first CTA language rewrites ("Get It Done. ₹2,500." vs. "File My ITR Now")
+- Playfair italic pull-quote styling for testimonials
+- `section-charcoal` utility class for dark-background sections
+- Apple touch icon for iOS home screen (already partially wired in `scripts.js`)
