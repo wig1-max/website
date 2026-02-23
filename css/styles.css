@@ -69,9 +69,16 @@
   --space-3xl: 64px;
   --space-4xl: 96px;
 
+  /* Premium Palette (Charcoal / Ivory) */
+  --ivory: #F5F0E8;
+  --charcoal: #1C1C1C;
+  --charcoal-deep: #0D0D0D;
+  --platinum: #E8E4DC;
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'DM Mono', 'Fira Code', monospace;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-mono: 'DM Mono', 'Fira Code', 'Courier New', monospace;
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -272,6 +279,8 @@ p {
 
 .section-header h2 {
   margin-bottom: var(--space-md);
+  font-family: var(--font-display);
+  letter-spacing: -0.3px;
 }
 
 .section-header p {
@@ -714,24 +723,46 @@ p {
 /* ---------- PRICING CARDS ---------- */
 .pricing-card {
   background: var(--white);
-  border: 2px solid var(--gray-200);
+  border: 1px solid var(--platinum);
   border-radius: var(--radius-lg);
-  padding: var(--space-xl);
+  padding: 40px var(--space-xl);
   text-align: center;
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  box-shadow: none;
 }
 
 .pricing-card:hover {
-  border-color: var(--green);
-  box-shadow: var(--shadow-card-hover);
-  transform: translateY(-4px);
+  border-color: var(--charcoal);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
 }
 
 .pricing-card.popular {
-  border-color: var(--green);
-  box-shadow: var(--shadow-card);
+  border-color: var(--charcoal);
+  background: var(--charcoal);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+.pricing-card.popular .pricing-name,
+.pricing-card.popular .pricing-desc,
+.pricing-card.popular .pricing-amount,
+.pricing-card.popular .pricing-market,
+.pricing-card.popular .pricing-features li {
+  color: var(--ivory);
+}
+
+.pricing-card.popular .pricing-amount {
+  color: var(--ivory);
+}
+
+.pricing-card.popular .pricing-features li::before {
+  color: var(--green-light);
+}
+
+.pricing-card.popular .pricing-amount .period {
+  color: rgba(245,240,232,0.6);
 }
 
 .pricing-card.popular::before {
@@ -765,9 +796,11 @@ p {
 .pricing-amount {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--charcoal);
   line-height: 1;
   margin-bottom: 4px;
+  font-family: var(--font-mono);
+  letter-spacing: -1px;
 }
 
 .pricing-amount .currency {
@@ -833,6 +866,8 @@ p {
   font-size: 1.75rem;
   font-weight: 800;
   color: var(--green);
+  font-family: var(--font-mono);
+  letter-spacing: -0.5px;
 }
 
 .price-save {
@@ -956,6 +991,9 @@ p {
   color: var(--white);
   margin-bottom: var(--space-lg);
   font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .hero h1 .highlight {
@@ -994,6 +1032,8 @@ p {
   font-weight: 800;
   color: var(--green-light);
   line-height: 1;
+  font-family: var(--font-mono);
+  letter-spacing: -1px;
 }
 
 .hero-stat-label {
@@ -1025,6 +1065,16 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Founder portrait in hero */
+.hero-founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-xl);
+  display: block;
 }
 
 .hero-float-card {
@@ -1146,6 +1196,8 @@ p {
   font-size: 0.95rem;
   color: var(--gray-700);
   line-height: 1.7;
+  font-family: var(--font-display);
+  font-style: italic;
   margin-bottom: var(--space-lg);
   font-style: italic;
 }
@@ -1340,7 +1392,9 @@ p {
 .calc-result-value {
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--charcoal);
+  font-family: var(--font-mono);
+  letter-spacing: -0.5px;
 }
 
 .calc-result-value.highlight {

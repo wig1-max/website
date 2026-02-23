@@ -264,13 +264,16 @@
       aspect-ratio: 3 / 4;
       background: var(--gradient-primary);
       border-radius: var(--radius-lg);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
       position: relative;
       overflow: hidden;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
     }
 
     .about-image::after {
@@ -280,18 +283,8 @@
       left: 0;
       right: 0;
       height: 40%;
-      background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
-    }
-
-    .about-image-initials {
-      font-size: 4rem;
-      font-weight: 800;
-      opacity: 0.15;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 8rem;
+      background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+      pointer-events: none;
     }
 
     .about-image-label {
@@ -646,9 +639,13 @@
     <div class="container">
       <div class="about-grid">
 
-        <!-- Image Placeholder -->
+        <!-- Founder Portrait -->
         <div class="about-image animate-on-scroll">
-          <span class="about-image-initials">AM</span>
+          <img
+            src="/images/aryan-madaan.jpg"
+            alt="Aryan Madaan — Founder &amp; ACCA-Qualified Accountant, Omzato Accounting"
+            onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.innerHTML+='<span style=\'font-size:8rem;font-weight:800;color:rgba(255,255,255,0.15);position:absolute;\'>AM</span><div class=\'about-image-label\'><h4>Aryan Madaan</h4><p>ACCA | Founder, Omzato Accounting</p></div>'"
+          >
           <div class="about-image-label">
             <h4>Aryan Madaan</h4>
             <p>ACCA | Founder, Omzato Accounting</p>

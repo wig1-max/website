@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C1C1C"/>
+      <stop offset="100%" style="stop-color:#2C3E6B"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0D0D"/>
+      <stop offset="100%" style="stop-color:#1C1C1C"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="400" height="500" rx="0"/>
+    </clipPath>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <!-- Subtle grid texture -->
+  <rect width="400" height="500" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <!-- Body / Suit -->
+  <ellipse cx="200" cy="520" rx="140" ry="100" fill="url(#suit)"/>
+  <rect x="100" y="380" width="200" height="150" fill="#0D0D0D" rx="4"/>
+  <!-- Collar / Shirt -->
+  <polygon points="180,380 200,420 220,380 210,360 190,360" fill="#F5F0E8" opacity="0.95"/>
+  <!-- Tie -->
+  <polygon points="200,380 193,420 200,430 207,420" fill="#1B2A4A"/>
+  <polygon points="193,380 207,380 204,392 196,392" fill="#1B2A4A"/>
+  <!-- Jacket lapels -->
+  <polygon points="100,380 180,380 170,420 100,400" fill="#111111"/>
+  <polygon points="300,380 220,380 230,420 300,400" fill="#111111"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="230" rx="70" ry="82" fill="#C68642"/>
+  <!-- Hair -->
+  <ellipse cx="200" cy="160" rx="72" ry="48" fill="#1A0A00"/>
+  <rect x="128" y="148" width="144" height="40" fill="#1A0A00" rx="4"/>
+  <!-- Face details -->
+  <!-- Eyes -->
+  <ellipse cx="178" cy="225" rx="9" ry="8" fill="#fff"/>
+  <ellipse cx="222" cy="225" rx="9" ry="8" fill="#fff"/>
+  <ellipse cx="180" cy="226" rx="6" ry="6" fill="#1A0A00"/>
+  <ellipse cx="224" cy="226" rx="6" ry="6" fill="#1A0A00"/>
+  <ellipse cx="181" cy="225" rx="2" ry="2" fill="#fff"/>
+  <ellipse cx="225" cy="225" rx="2" ry="2" fill="#fff"/>
+  <!-- Eyebrows -->
+  <path d="M168 213 Q178 207 188 213" stroke="#1A0A00" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M212 213 Q222 207 232 213" stroke="#1A0A00" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M200 235 Q196 252 191 256 Q200 260 209 256 Q204 252 200 235" fill="#B5703A" opacity="0.6"/>
+  <!-- Mouth -->
+  <path d="M185 272 Q200 282 215 272" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Ears -->
+  <ellipse cx="130" cy="235" rx="12" ry="16" fill="#C68642"/>
+  <ellipse cx="270" cy="235" rx="12" ry="16" fill="#C68642"/>
+  <!-- Neck -->
+  <rect x="180" y="306" width="40" height="60" fill="#C68642" rx="4"/>
+  <!-- Name overlay -->
+  <rect x="0" y="440" width="400" height="60" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="463" font-family="Georgia, serif" font-size="18" font-weight="700" text-anchor="middle" fill="#F5F0E8">Aryan Madaan</text>
+  <text x="200" y="486" font-family="Georgia, serif" font-size="13" text-anchor="middle" fill="rgba(245,240,232,0.75)">ACCA | Founder, Omzato Accounting</text>
+</svg>

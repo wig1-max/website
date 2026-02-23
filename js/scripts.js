@@ -196,7 +196,7 @@
         '<a href="/" class="logo" aria-label="Omzato Accounting Home">' +
           '<div class="logo-icon"><span>O</span></div>' +
           '<div class="logo-text">' +
-            '<span class="logo-name">Omzato</span>' +
+            '<span class="logo-name" style="font-family:var(--font-display);">Omzato</span>' +
             '<span class="logo-tagline">Accounting</span>' +
           '</div>' +
         '</a>' +
@@ -744,6 +744,33 @@
      ========================================================================== */
 
   document.addEventListener('DOMContentLoaded', function () {
+    // Inject Playfair Display serif font for premium brand typography
+    var serifFont = document.createElement('link');
+    serifFont.rel = 'stylesheet';
+    serifFont.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap';
+    document.head.appendChild(serifFont);
+
+    // Update favicon to SVG for crisp logo display on all screen densities
+    var iconLink = document.querySelector('link[rel="icon"]');
+    if (iconLink) {
+      iconLink.type = 'image/svg+xml';
+      iconLink.href = '/favicon.svg';
+    } else {
+      var newIcon = document.createElement('link');
+      newIcon.rel = 'icon';
+      newIcon.type = 'image/svg+xml';
+      newIcon.href = '/favicon.svg';
+      document.head.appendChild(newIcon);
+    }
+
+    // Apple touch icon for iOS home screen
+    if (!document.querySelector('link[rel="apple-touch-icon"]')) {
+      var appleIcon = document.createElement('link');
+      appleIcon.rel = 'apple-touch-icon';
+      appleIcon.href = '/favicon.svg';
+      document.head.appendChild(appleIcon);
+    }
+
     // Build shared header and footer first
     buildHeader();
     buildFooter();

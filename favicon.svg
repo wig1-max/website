@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background: charcoal with subtle rounded corners -->
+  <rect width="32" height="32" rx="6" fill="#1C1C1C"/>
+  <!-- Serif "O" in ivory — represents Omzato, clean and premium -->
+  <text
+    x="16"
+    y="24"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="700"
+    text-anchor="middle"
+    fill="#F5F0E8"
+    letter-spacing="-0.5"
+  >O</text>
+</svg>
