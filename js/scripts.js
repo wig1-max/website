@@ -165,14 +165,14 @@
     // Calculator page identifiers for dropdown active state
     var calculatorPages = [
       'income-tax-calculator',
-      'gst-calculator',
-      'emi-calculator',
-      'sip-calculator',
-      'tds-calculator',
       'hra-calculator',
-      'salary-calculator',
+      'emi-calculator',
       'fd-calculator',
-      'ppf-calculator'
+      'ppf-calculator',
+      'home-loan-calculator',
+      'goal-calculator',
+      'retirement-calculator',
+      'fire-calculator'
     ];
 
     // Service page identifiers
@@ -231,14 +231,14 @@
             '</a>' +
             '<div class="dropdown-menu">' +
               '<a href="/income-tax-calculator.html"' + activeClass('income-tax-calculator') + '>Income Tax Calculator</a>' +
-              '<a href="/gst-calculator.html"' + activeClass('gst-calculator') + '>GST Calculator</a>' +
-              '<a href="/emi-calculator.html"' + activeClass('emi-calculator') + '>EMI Calculator</a>' +
-              '<a href="/sip-calculator.html"' + activeClass('sip-calculator') + '>SIP Calculator</a>' +
-              '<a href="/tds-calculator.html"' + activeClass('tds-calculator') + '>TDS Calculator</a>' +
               '<a href="/hra-calculator.html"' + activeClass('hra-calculator') + '>HRA Calculator</a>' +
-              '<a href="/salary-calculator.html"' + activeClass('salary-calculator') + '>Salary Calculator</a>' +
+              '<a href="/emi-calculator.html"' + activeClass('emi-calculator') + '>EMI Calculator</a>' +
               '<a href="/fd-calculator.html"' + activeClass('fd-calculator') + '>FD Calculator</a>' +
               '<a href="/ppf-calculator.html"' + activeClass('ppf-calculator') + '>PPF Calculator</a>' +
+              '<a href="/home-loan-calculator.html"' + activeClass('home-loan-calculator') + '>Home Loan Calculator</a>' +
+              '<a href="/goal-calculator.html"' + activeClass('goal-calculator') + '>Goal Planning Calculator</a>' +
+              '<a href="/retirement-calculator.html"' + activeClass('retirement-calculator') + '>Retirement Calculator</a>' +
+              '<a href="/fire-calculator.html"' + activeClass('fire-calculator') + '>FIRE Calculator</a>' +
             '</div>' +
           '</div>' +
 
@@ -277,14 +277,14 @@
         '<a href="/advisory.html"' + activeClass('advisory') + ' style="padding-left:20px;font-size:0.95rem;">Advisory</a>' +
         '<a href="/calculators.html"' + (isCalcPage ? ' class="active"' : activeClass('calculators')) + '>Calculators</a>' +
         '<a href="/income-tax-calculator.html"' + activeClass('income-tax-calculator') + ' style="padding-left:20px;font-size:0.95rem;">Income Tax Calculator</a>' +
-        '<a href="/gst-calculator.html"' + activeClass('gst-calculator') + ' style="padding-left:20px;font-size:0.95rem;">GST Calculator</a>' +
-        '<a href="/emi-calculator.html"' + activeClass('emi-calculator') + ' style="padding-left:20px;font-size:0.95rem;">EMI Calculator</a>' +
-        '<a href="/sip-calculator.html"' + activeClass('sip-calculator') + ' style="padding-left:20px;font-size:0.95rem;">SIP Calculator</a>' +
-        '<a href="/tds-calculator.html"' + activeClass('tds-calculator') + ' style="padding-left:20px;font-size:0.95rem;">TDS Calculator</a>' +
         '<a href="/hra-calculator.html"' + activeClass('hra-calculator') + ' style="padding-left:20px;font-size:0.95rem;">HRA Calculator</a>' +
-        '<a href="/salary-calculator.html"' + activeClass('salary-calculator') + ' style="padding-left:20px;font-size:0.95rem;">Salary Calculator</a>' +
+        '<a href="/emi-calculator.html"' + activeClass('emi-calculator') + ' style="padding-left:20px;font-size:0.95rem;">EMI Calculator</a>' +
         '<a href="/fd-calculator.html"' + activeClass('fd-calculator') + ' style="padding-left:20px;font-size:0.95rem;">FD Calculator</a>' +
         '<a href="/ppf-calculator.html"' + activeClass('ppf-calculator') + ' style="padding-left:20px;font-size:0.95rem;">PPF Calculator</a>' +
+        '<a href="/home-loan-calculator.html"' + activeClass('home-loan-calculator') + ' style="padding-left:20px;font-size:0.95rem;">Home Loan Calculator</a>' +
+        '<a href="/goal-calculator.html"' + activeClass('goal-calculator') + ' style="padding-left:20px;font-size:0.95rem;">Goal Planning Calculator</a>' +
+        '<a href="/retirement-calculator.html"' + activeClass('retirement-calculator') + ' style="padding-left:20px;font-size:0.95rem;">Retirement Calculator</a>' +
+        '<a href="/fire-calculator.html"' + activeClass('fire-calculator') + ' style="padding-left:20px;font-size:0.95rem;">FIRE Calculator</a>' +
         '<a href="/why-us.html"' + activeClass('why-us') + '>Why Us</a>' +
         '<a href="/testimonials.html"' + activeClass('testimonials') + '>Testimonials</a>' +
         '<a href="/blog.html"' + activeClass('blog') + '>Blog</a>' +

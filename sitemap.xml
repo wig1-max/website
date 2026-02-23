@@ -32,6 +32,58 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Individual Service Pages -->
+  <url>
+    <loc>https://omzato.com/tax-filing.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://omzato.com/gst-services.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://omzato.com/company-registration.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://omzato.com/audit.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://omzato.com/bookkeeping.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://omzato.com/advisory.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://omzato.com/privacy.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://omzato.com/terms.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- Calculator Pages -->
   <url>
     <loc>https://omzato.com/calculators.html</loc>
